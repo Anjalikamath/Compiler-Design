@@ -14,12 +14,12 @@ Project Abstract: The aim of the project is to build a mini compiler based on pe
 
 Code Execution : 
 
-For all phases except last phase i.e assembly phase execution is as follows:
- lex lexer.l
- yacc -d parser.y
- gcc y.tab.c
- ./a.out input.pl
+For all phases except last phase i.e assembly phase execution is as follows: <br>
+ lex lexer.l <br>
+ yacc -d parser.y  <br>
+ gcc y.tab.c  <br>
+ ./a.out input.pl  <br>
 
- For the Phase5-assembly execution is as follows:
+ For the Phase5-assembly execution is as follows:  <br>
  python3 assembly.py
  
