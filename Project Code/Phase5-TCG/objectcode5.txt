@@ -1,0 +1,57 @@
+.TEXT
+	MOV R2,0
+	STR R2,$decl
+	MOV R3,10
+	STR R3,$b
+	MOV R4,30
+	STR R4,$c
+	MOV R5,0
+	STR R5,$a
+	MOV R6,25
+	STR R6,$age
+	MOV R7,0
+	MOV R8,1
+	MOV R9,1
+	R10 = NOT R11
+	BNEZ R10 GOTO L0
+	MOV R6,33
+	STR R6,$age
+L0:
+	MOV R12,0
+	STR R12,$divudivud
+	MOV R13,2
+	STR R13,$x
+	MOV R14,1
+	STR R14,$y
+L1:
+	ADD R13,R13,1
+	STR R13,$x
+	SUB R2,R13,3
+	BLT R2 GOTO L1
+	MOV R3,2
+	MOV R4,4
+	MOV R5,8
+	LOAD R5,$arr[t7]
+	MOV R7,10
+	STR R7,$choice
+	LOAD R8,$choice
+	MOV R9,10
+	MOV R11,10
+	MOV R10,1
+	 R8 GOTO L2
+	BR L3
+L2:
+	MOV R6,1
+	STR R6,$d
+	BR L5
+L3:
+	MOV R6,0
+	STR R6,$d
+L5:
+	ADD R4,R4,1
+	STR R4,$c
+	LOAD R12,$c
+
+.DATA
+	ARR : .WORD 3 , 5 , 7 , 9
+	S : .ASCIZ	"hello"

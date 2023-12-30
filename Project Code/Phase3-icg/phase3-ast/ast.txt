@@ -1,0 +1,191 @@
+
+Abstract Syntax Tree:
+
+
+Root:Shebang
+Children: Shebang_line Declr 
+
+
+Root:Declr
+Children: = Declr 
+
+
+Root:=
+Children: $decl 0 
+
+
+Root:Declr
+Children: = Declr 
+
+
+Root:=
+Children: $b 10 
+
+
+Root:Declr
+Children: = Declr 
+
+
+Root:=
+Children: $c 30 
+
+
+Root:Declr
+Children: = Declr 
+
+
+Root:=
+Children: $a 0 
+
+
+Root:Declr
+Children: = If 
+
+
+Root:=
+Children: $age 25 
+
+
+Root:If
+Children: or Declr Declr 
+
+
+Root:or
+Children: and and 
+
+
+Root:and
+Children: $b $decl 
+
+
+Root:and
+Children: $c $age 
+
+
+Root:Declr
+Children: = epsilon 
+
+
+Root:=
+Children: $age 33 
+
+
+Root:Declr
+Children: = Declr 
+
+
+Root:=
+Children: $divudivud 0 
+
+
+Root:Declr
+Children: = Declr 
+
+
+Root:=
+Children: $s "hello" 
+
+
+Root:Declr
+Children: = Do while 
+
+
+Root:=
+Children: $x 2 
+
+
+Root:Do while
+Children: Declr < Declr 
+
+
+Root:Declr
+Children: = Declr 
+
+
+Root:=
+Children: $y 1 
+
+
+Root:Declr
+Children: = epsilon 
+
+
+Root:=
+Children: $x + 
+
+
+Root:+
+Children: $x 1 
+
+
+Root:<
+Children: $x 3 
+
+
+Root:Declr
+Children: = Declr 
+
+
+Root:=
+Children: $g $arr[2] 
+
+
+Root:Declr
+Children: = use_Switch 
+
+
+Root:=
+Children: $choice 10 
+
+
+Root:use_Switch
+Children: epsilon $choice case Declr 
+
+
+Root:case
+Children: case_arg default 
+
+
+Root:case_arg
+Children: 10 Declr 
+
+
+Root:Declr
+Children: = epsilon 
+
+
+Root:=
+Children: $d + 
+
+
+Root:+
+Children: $a 1 
+
+
+Root:default
+Children: Declr NULL 
+
+
+Root:Declr
+Children: = epsilon 
+
+
+Root:=
+Children: $d $a 
+
+
+Root:$a
+Children: $a $b 
+
+
+Root:Declr
+Children: = epsilon 
+
+
+Root:=
+Children: $q + 
+
+
+Root:+
+Children: $c 1
+

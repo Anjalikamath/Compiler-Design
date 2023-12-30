@@ -1,0 +1,40 @@
+$arr = [ #3 , #5 , #7 , #9 ]
+$decl = #0
+$b = #10
+$c = #30
+$a = #0
+$age = #25
+t0 = #0
+t1 = #1
+t2 = #1
+t3 = not t2
+IF t3 GOTO L0
+$age = #33
+LABEL L0
+$divudivud = #0
+$s = "hello"
+$x = #2
+$y = #1
+LABEL L1
+$x = $x + #1
+t4 = $x < #3
+IF t4 GOTO L1
+t5 = #2
+t6 = #4
+t7 = #8
+$a = $arr[t7]
+$choice = #10
+t8 = $choice
+t9 = #10
+t10 = #10
+t11 = #1
+IF t1 GOTO L2
+ELSE GOTO L3
+LABEL L2
+$d = #1
+GOTO L5
+LABEL L3
+$d = #0
+LABEL L5
+$c ++
+$q = $c
